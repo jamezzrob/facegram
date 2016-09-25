@@ -1,0 +1,52 @@
+Script started on Sun Sep 25 10:29:57 2016
+[?1034hbash-3.2$ 
+bash-3.2$ 
+bash-3.2$ pwd
+/Users/jamo/apps/fbapp
+bash-3.2$ rails s
+=> Booting Puma
+=> Rails 5.0.0.1 application starting in development on http://localhost:3000
+=> Run `rails server -h` for more startup options
+Puma starting in single mode...
+* Version 3.6.0 (ruby 2.3.1-p112), codename: Sleepy Sunday Serenity
+* Min threads: 5, max threads: 5
+* Environment: development
+* Listening on tcp://localhost:3000
+Exiting
+/Users/jamo/.rvm/gems/ruby-2.3.1/gems/puma-3.6.0/lib/puma/binder.rb:266:in `initialize': Address already in use - bind(2) for "::1" port 3000 (Errno::EADDRINUSE)
+	from /Users/jamo/.rvm/gems/ruby-2.3.1/gems/puma-3.6.0/lib/puma/binder.rb:266:in `new'
+	from /Users/jamo/.rvm/gems/ruby-2.3.1/gems/puma-3.6.0/lib/puma/binder.rb:266:in `add_tcp_listener'
+	from /Users/jamo/.rvm/gems/ruby-2.3.1/gems/puma-3.6.0/lib/puma/binder.rb:260:in `block in add_tcp_listener'
+	from /Users/jamo/.rvm/gems/ruby-2.3.1/gems/puma-3.6.0/lib/puma/binder.rb:259:in `each'
+	from /Users/jamo/.rvm/gems/ruby-2.3.1/gems/puma-3.6.0/lib/puma/binder.rb:259:in `add_tcp_listener'
+	from /Users/jamo/.rvm/gems/ruby-2.3.1/gems/puma-3.6.0/lib/puma/binder.rb:102:in `block in parse'
+	from /Users/jamo/.rvm/gems/ruby-2.3.1/gems/puma-3.6.0/lib/puma/binder.rb:85:in `each'
+	from /Users/jamo/.rvm/gems/ruby-2.3.1/gems/puma-3.6.0/lib/puma/binder.rb:85:in `parse'
+	from /Users/jamo/.rvm/gems/ruby-2.3.1/gems/puma-3.6.0/lib/puma/runner.rb:133:in `load_and_bind'
+	from /Users/jamo/.rvm/gems/ruby-2.3.1/gems/puma-3.6.0/lib/puma/single.rb:85:in `run'
+	from /Users/jamo/.rvm/gems/ruby-2.3.1/gems/puma-3.6.0/lib/puma/launcher.rb:172:in `run'
+	from /Users/jamo/.rvm/gems/ruby-2.3.1/gems/puma-3.6.0/lib/rack/handler/puma.rb:51:in `run'
+	from /Users/jamo/.rvm/gems/ruby-2.3.1/gems/rack-2.0.1/lib/rack/server.rb:296:in `start'
+	from /Users/jamo/.rvm/gems/ruby-2.3.1/gems/railties-5.0.0.1/lib/rails/commands/server.rb:79:in `start'
+	from /Users/jamo/.rvm/gems/ruby-2.3.1/gems/railties-5.0.0.1/lib/rails/commands/commands_tasks.rb:90:in `block in server'
+	from /Users/jamo/.rvm/gems/ruby-2.3.1/gems/railties-5.0.0.1/lib/rails/commands/commands_tasks.rb:85:in `tap'
+	from /Users/jamo/.rvm/gems/ruby-2.3.1/gems/railties-5.0.0.1/lib/rails/commands/commands_tasks.rb:85:in `server'
+	from /Users/jamo/.rvm/gems/ruby-2.3.1/gems/railties-5.0.0.1/lib/rails/commands/commands_tasks.rb:49:in `run_command!'
+	from /Users/jamo/.rvm/gems/ruby-2.3.1/gems/railties-5.0.0.1/lib/rails/commands.rb:18:in `<top (required)>'
+	from /Users/jamo/apps/fbapp/bin/rails:9:in `require'
+	from /Users/jamo/apps/fbapp/bin/rails:9:in `<top (required)>'
+	from /Users/jamo/.rvm/gems/ruby-2.3.1/gems/spring-1.7.2/lib/spring/client/rails.rb:28:in `load'
+	from /Users/jamo/.rvm/gems/ruby-2.3.1/gems/spring-1.7.2/lib/spring/client/rails.rb:28:in `call'
+	from /Users/jamo/.rvm/gems/ruby-2.3.1/gems/spring-1.7.2/lib/spring/client/command.rb:7:in `call'
+	from /Users/jamo/.rvm/gems/ruby-2.3.1/gems/spring-1.7.2/lib/spring/client.rb:30:in `run'
+	from /Users/jamo/.rvm/gems/ruby-2.3.1/gems/spring-1.7.2/bin/spring:49:in `<top (required)>'
+	from /Users/jamo/.rvm/gems/ruby-2.3.1/gems/spring-1.7.2/lib/spring/binstub.rb:11:in `load'
+	from /Users/jamo/.rvm/gems/ruby-2.3.1/gems/spring-1.7.2/lib/spring/binstub.rb:11:in `<top (required)>'
+	from /Users/jamo/.rvm/rubies/ruby-2.3.1/lib/ruby/2.3.0/rubygems/core_ext/kernel_require.rb:55:in `require'
+	from /Users/jamo/.rvm/rubies/ruby-2.3.1/lib/ruby/2.3.0/rubygems/core_ext/kernel_require.rb:55:in `require'
+	from /Users/jamo/apps/fbapp/bin/spring:13:in `<top (required)>'
+	from bin/rails:3:in `load'
+	from bin/rails:3:in `<main>'
+bash-3.2$ exit
+
+Script done on Sun Sep 25 10:31:04 2016

@@ -1,0 +1,58 @@
+<p id="notice"><%= notice %></p>
+
+ <div class="row">
+   <!-- setting the layout of the page col-md4 -->
+   <div class="col-md-4">
+      <div class="panel panel-default">
+          <div class="panel-body">
+
+            <%= image_tag @profile.photo, class: 'img-responsive img-thumbnail' %>
+
+            <p class="lead">
+            <strong>Username:</strong>
+            <%= @profile.username %>
+            </p>
+
+            <!-- <p>
+              <strong>Photo:</strong>
+              <%= image_tag @profile.photo, width: '300px' %>
+            </p> -->
+
+            <p>
+              <strong>Bio:</strong>
+              <%= @profile.bio %>
+            </p>
+
+            <p>
+              <strong>email:</strong>
+              <%= @profile.user.email %>
+            </p>
+
+
+            <%= link_to 'Edit', edit_profile_path(@profile) %> |
+            <%= link_to 'Back', profiles_path %>
+
+        </div>
+    </div>
+</div>
+        <div class="col-md-4">
+           <div class="panel panel-default">
+               <div class="panel-body">
+                 <h3>Upload</h3>
+                 <%= render 'posts/form' %>
+               </div>
+             </div>
+            <% @profile.user.posts.chron_order.each do |post| %>
+            <div class"panel panel-default">
+               <div class="panel-body">
+                 <%= image_tag post.photo, class: 'image-responsive img-thumbnail' %>
+                 <p><strong<%= post.caption %></strong</p>
+                 <p> Take by <%= link_to post.user.profile.username, profile_path(post.user.profile) %> at <%
+                 post.location %>, <%=time_ago_in_words post.created_at %> ago</p>
+                 <!-- <p>Taken at <%= post.location %>, <%= time_ago_in_words post.created_at %> ago</p> -->
+               </div>
+             </div>
+          </div>
+             <% end %>
+           </div>
+         </div>
